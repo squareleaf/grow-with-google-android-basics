@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.udacity.myapplication.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/deadpool"
+        android:scaleType="centerCrop" />
+    
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="15dp"
+        android:text="To Mr. White!"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:fontFamily="sans-serif-light" />
+
+    <ImageView
+        android:id="@+id/happy"
+        android:layout_below="@id/greeting"
+        android:src="@drawable/smile"
+        android:layout_marginLeft="50dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/vday"
+        android:layout_below="@id/greeting"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/heart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@android:color/white" />
+
+    <ImageView
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/greeting"
+        android:layout_marginRight="50dp"
+        android:src="@drawable/day"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:tint="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="From, Ms. Green"
+        android:textSize="36sp"
+        android:textColor="@android:color/holo_green_light"
+        android:fontFamily="cursive"
+        android:layout_margin="20dp" />
+</RelativeLayout>
+
