@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.udacity.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/announce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Intersect 2018 Conference: Early Bird tickets now available!"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:padding="10dp"
+        android:background="#525c65" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_below="@id/announce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/learning"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_below="@id/photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="Udacity"
+        android:textSize="48dp"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="I love the content and teaching approach, and wouldn't be where I am now without Udacity. - Sam, graduate"
+        android:textSize="14sp"
+        android:textStyle="italic"
+        android:layout_margin="20dp"
+        android:background="#525c65"/>
+</RelativeLayout>
+
