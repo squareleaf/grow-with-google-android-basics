@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HelloAndroid</string>
+    <string name="news">Intersect 2018 Conference: Early Bird tickets now available!</string>
+    <string name="name">Udacity</string>
+    <string name="address">2465 Latham St\nMountain View, CA 94043\n650-555-5555</string>
+    <string name="testimonial">I love the content and teaching approach, and wouldn\'t be where I am now without Udacity. -Sam, graduate</string>
+    <string name="main_image">Students learning</string>
 </resources>
