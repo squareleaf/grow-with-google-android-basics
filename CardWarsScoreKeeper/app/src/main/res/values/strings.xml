@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Card Wars!</string>
+    <string name="player_1">Finn</string>
+    <string name="player_2">Jake</string>
+    <string name="lose_1_life">Lose 1 Life</string>
+    <string name="lose_3_life">Lose 3 Life</string>
+    <string name="restore_1_life">Restore 1 Life</string>
+    <string name="reset">New Game!</string>
+    <string name="winner">COOL GUY!</string>
+    <string name="loser">DWEEB!</string>
 </resources>

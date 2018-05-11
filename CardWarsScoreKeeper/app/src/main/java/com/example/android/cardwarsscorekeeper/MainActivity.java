@@ -23,8 +23,8 @@ public class MainActivity extends AppCompatActivity {
         TextView jakeScoreView = (TextView) findViewById(R.id.jake_score);
         TextView finnScoreView = (TextView) findViewById(R.id.finn_score);
         if (scoreFinn <= 0) {
-            jakeScoreView.setText("COOL GUY");
-            finnScoreView.setText("DWEEB");
+            jakeScoreView.setText(R.string.winner);
+            finnScoreView.setText(R.string.loser);
         } else {
             finnScoreView.setText(String.valueOf(score));
         }
@@ -49,8 +49,8 @@ public class MainActivity extends AppCompatActivity {
         TextView jakeScoreView = (TextView) findViewById(R.id.jake_score);
         TextView finnScoreView = (TextView) findViewById(R.id.finn_score);
         if (scoreJake <= 0) {
-            jakeScoreView.setText("DWEEB");
-            finnScoreView.setText("COOL GUY");
+            jakeScoreView.setText(R.string.loser);
+            finnScoreView.setText(R.string.winner);
         } else {
             jakeScoreView.setText(String.valueOf(score));
         }
