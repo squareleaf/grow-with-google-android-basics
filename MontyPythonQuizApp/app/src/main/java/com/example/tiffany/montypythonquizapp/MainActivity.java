@@ -19,51 +19,47 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void submitAnswers(View view) {
-        boolean worthy = true;
+        int worthy = 0;
 
         EditText nameInput = (EditText) findViewById(R.id.knight_name_answer);
         String knightName = nameInput.getText().toString();
 
-        // knights must have a name
-        if (TextUtils.isEmpty(knightName)) {
-            worthy = false;
+        if ((knightName.toLowerCase().indexOf("lancelot") > -1) ||
+            (knightName.toLowerCase().indexOf("robin") > -1) ||
+            (knightName.toLowerCase().indexOf("bedevere") > -1) ||
+            (knightName.toLowerCase().indexOf("galahad") > -1)) {
+                worthy++;
         }
 
-        EditText questInput = (EditText) findViewById(R.id.knight_quest_answer);
-        String quest = questInput.getText().toString();
+        // knights hail from Camelot. Round table is also acceptable
+        EditText landInput = (EditText) findViewById(R.id.knight_land_answer);
+        String land = landInput.getText().toString();
 
-        // knights must seek the grail
-        if (quest.toLowerCase().indexOf(("grail").toLowerCase()) == -1) {
-            worthy = false;
+        if ((land.toLowerCase().indexOf("camelot") > -1) || (land.toLowerCase().indexOf("round table") > -1)) {
+            worthy++;
         }
 
-        CheckBox yellowCheckBox = (CheckBox) findViewById(R.id.knight_color_yellow);
-        boolean yellow = yellowCheckBox.isChecked();
+        // Tim the Enchanter is who they encounter
+        CheckBox timCheckBox = (CheckBox) findViewById(R.id.magician_tim);
+        boolean tim = timCheckBox.isChecked();
 
-        CheckBox greenCheckBox = (CheckBox) findViewById(R.id.knight_color_green);
-        boolean green = greenCheckBox.isChecked();
-
-        CheckBox blueCheckBox = (CheckBox) findViewById(R.id.knight_color_blue);
-        boolean blue = blueCheckBox.isChecked();
-
-        // knights can only have one favorite color
-        if (yellow && (green || blue) || (green && blue)) {
-            worthy = false;
+        if (tim) {
+            worthy++;
         }
 
-        RadioGroup rGroup = (RadioGroup) findViewById(R.id.swallow_group);
-        String swallow = ((RadioButton)findViewById(rGroup.getCheckedRadioButtonId())).getText().toString();
-        String badAnswer = this.getResources().getString(R.string.swallow_unknown);
+        // All of the black knight's limbs are severed
+        RadioGroup rGroup = (RadioGroup) findViewById(R.id.black_knight_group);
+        String blackKnight = ((RadioButton)findViewById(rGroup.getCheckedRadioButtonId())).getText().toString();
+        String correctAnswer = this.getResources().getString(R.string.black_both);
 
-        // knights must know many things to be a knight
-        if (swallow == badAnswer) {
-            worthy = false;
+        if (blackKnight == correctAnswer) {
+            worthy++;
         }
 
-        if (worthy == true) {
-            Toast.makeText(this, "You may cross the bridge, Sir Knight", Toast.LENGTH_SHORT).show();
+        if (worthy >= 4) {
+            Toast.makeText(this, "You scored " + worthy + ". You may cross the bridge, Sir Knight", Toast.LENGTH_SHORT).show();
         } else {
-            Toast.makeText(this, "Wrong! Into the pit with you! AAAAAGHHHH!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "You scored " + worthy + ". Into the pit with you!", Toast.LENGTH_SHORT).show();
         }
     }
 }

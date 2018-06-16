@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">MontyPythonQuizApp</string>
     <string name="title">Monty Python and the Holy Grail</string>
-    <string name="subtitle">Questions at the Bridge of Death</string>
-    <string name="exposition">Stop! Who approaches the Bridge of Death must answer me these questions four, 'ere they reach the other shore.</string>
-    <string name="question_name">WHAAAAT is your name?</string>
-    <string name="question_quest">WHAAAAT is your quest?</string>
-    <string name="question_color">WHAAAAT is your favorite color(s)?</string>
-    <string name="question_color_blue">Blue</string>
-    <string name="question_color_green">Green</string>
-    <string name="question_color_yellow">Yellow</string>
-    <string name="question_swallow">WHAAAAT is the air-speed velocity of an unladen swallow?</string>
-    <string name="swallow_african">African?</string>
-    <string name="swallow_european">European?</string>
-    <string name="swallow_unknown">I Don\'t Know!</string>
+    <string name="subtitle">Test your knowledge of the movie</string>
+    <string name="exposition">Stop! Who approaches the Bridge of Death must answer me these questions four, \'ere they reach the other shore.</string>
+    <string name="question_name">Name one of the knights who joins King Arthur in his quest</string>
+    <string name="question_land">Where were the knights from?</string>
+    <string name="question_magician">What is the name of the magician the knights talk to about the killer rabbit?</string>
+    <string name="question_magician_frank">Frank the Wizard</string>
+    <string name="question_magician_tim">Tim the Enchanter</string>
+    <string name="question_magician_merlin">Mystic Merlin</string>
+    <string name="question_black_knight">Which limbs did King Arthur cut off the Black Knight in their battle?</string>
+    <string name="black_arms">arms</string>
+    <string name="black_legs">legs</string>
+    <string name="black_both">both</string>
     <string name="submit_button">Am I worthy to cross the Bridge of Death?</string>
 </resources>
