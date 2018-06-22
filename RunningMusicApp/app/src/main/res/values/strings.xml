@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Music for Runners</string>
+    <string name="slowest">Warm Up Walk 125-135bpm</string>
+    <string name="slow">Slow Jog 135-145bpm</string>
+    <string name="fast">Run 145-155bpm</string>
+    <string name="fastest">Sprint 155-170bpm</string>
+</resources>

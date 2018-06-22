@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#FFE076</color>
+    <color name="colorPrimary">#940D13</color>
+    <color name="colorPrimaryDark">#700D10</color>
+    <color name="colorText">#FFF0C0</color>
+    <color name="fastest">#700D10</color>
+    <color name="fast">#940D13</color>
+    <color name="slow">#EE7F01</color>
+    <color name="slowest">#FDCC03</color>
+</resources>

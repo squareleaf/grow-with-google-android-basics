@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:padding="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/fastest"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/slowest"
+        android:onClick="openNowPlaying"
+        android:padding="30dp"
+        android:text="@string/slowest"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/slow"
+        android:onClick="openNowPlaying"
+        android:padding="30dp"
+        android:text="@string/slow"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fast"
+        android:onClick="openNowPlaying"
+        android:padding="30dp"
+        android:text="@string/fast"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fastest"
+        android:onClick="openNowPlaying"
+        android:padding="30dp"
+        android:text="@string/fastest"
+        android:textColor="@color/colorText"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
