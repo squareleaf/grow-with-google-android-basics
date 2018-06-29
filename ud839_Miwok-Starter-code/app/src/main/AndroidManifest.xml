@@ -39,7 +39,7 @@
             android:name=".ColorsActivity"
             android:label="Colors" />
         <activity
-            android:name=".FamilyMembersActivity"
+            android:name=".FamilyActivity"
             android:label="Family Members" />
     </application>
 
