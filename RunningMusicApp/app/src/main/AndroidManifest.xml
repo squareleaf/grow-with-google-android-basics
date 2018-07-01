@@ -16,7 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NowPlaying"></activity>
+        <activity
+            android:name=".SlowestActivity"
+            android:label="Warm Up Walk 125-135 bpm" />
+        <activity
+            android:name=".SlowActivity"
+            android:label="Slow Jog 135-145 bpm" />
+        <activity
+            android:name=".FastActivity"
+            android:label="Run 145-155 bpm" />
+        <activity
+            android:name=".FastestActivity"
+            android:label="Sprint 155-170 bpm" />
     </application>
 
 </manifest>

@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         slowestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent playingIntent = new Intent(MainActivity.this, NowPlaying.class);
+                Intent playingIntent = new Intent(MainActivity.this, SlowestActivity.class);
                 startActivity(playingIntent);
             }
         });
@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
         slowButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent playingIntent = new Intent(MainActivity.this, NowPlaying.class);
+                Intent playingIntent = new Intent(MainActivity.this, SlowActivity.class);
                 startActivity(playingIntent);
             }
         });
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         fastButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent playingIntent = new Intent(MainActivity.this, NowPlaying.class);
+                Intent playingIntent = new Intent(MainActivity.this, FastActivity.class);
                 startActivity(playingIntent);
             }
         });
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         fastestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent playingIntent = new Intent(MainActivity.this, NowPlaying.class);
+                Intent playingIntent = new Intent(MainActivity.this, FastestActivity.class);
                 startActivity(playingIntent);
             }
         });
