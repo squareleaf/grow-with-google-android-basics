@@ -4,9 +4,9 @@ public class Song {
 
     private String mTitle;
     private String mArtist;
-    private int mBeatsPerMinute;
+    private String mBeatsPerMinute;
 
-    public Song(String title, String artist, int beatsPerMinute) {
+    public Song(String title, String artist, String beatsPerMinute) {
         mTitle = title;
         mArtist = artist;
         mBeatsPerMinute = beatsPerMinute;
@@ -20,7 +20,7 @@ public class Song {
         return mArtist;
     }
 
-    public int getBPM() {
-        return mBeatsPerMinute;
+    public String getBPM() {
+        return mBeatsPerMinute + "bpm";
     }
 }

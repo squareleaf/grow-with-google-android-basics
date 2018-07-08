@@ -31,7 +31,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
         artistTextView.setText(currentSong.getArtist());
 
         TextView bpmTextView = (TextView) listItemView.findViewById(R.id.song_bpm);
-        bpmTextView.setText(currentSong.getBPM());
+        bpmTextView.setText(String.valueOf(currentSong.getBPM()));
 
         return listItemView;
     }

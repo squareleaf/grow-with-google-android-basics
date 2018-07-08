@@ -1,8 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ListView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/list"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp" />
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <ListView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/rewind" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/play" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/forward" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/walkButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/walk" />
+
+        <ImageButton
+            android:id="@+id/jogButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/jog" />
+
+        <ImageButton
+            android:id="@+id/runButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/run" />
+
+        <ImageButton
+            android:id="@+id/sprintButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/button_background"
+            android:src="@drawable/sprint" />
+
+    </LinearLayout>
+
+</LinearLayout>
