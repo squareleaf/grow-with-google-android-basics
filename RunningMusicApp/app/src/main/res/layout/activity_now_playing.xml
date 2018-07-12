@@ -16,32 +16,32 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:gravity="center_horizontal|center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <ImageButton
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
             android:background="@drawable/button_background"
+            android:padding="10dp"
             android:src="@drawable/rewind" />
 
         <ImageButton
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
             android:background="@drawable/button_background"
+            android:padding="10dp"
             android:src="@drawable/play" />
 
         <ImageButton
             android:layout_width="75dp"
             android:layout_height="75dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
             android:background="@drawable/button_background"
+            android:padding="10dp"
             android:src="@drawable/forward" />
 
     </LinearLayout>
@@ -49,17 +49,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="10dp"
         android:gravity="center_horizontal|center_vertical"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10dp">
 
         <ImageButton
             android:id="@+id/walkButton"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
+            android:adjustViewBounds="true"
             android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/walk" />
 
         <ImageButton
@@ -67,8 +69,10 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
+            android:adjustViewBounds="true"
             android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/jog" />
 
         <ImageButton
@@ -76,8 +80,10 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
+            android:adjustViewBounds="true"
             android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/run" />
 
         <ImageButton
@@ -85,8 +91,10 @@
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="10dp"
-            android:padding="10dp"
+            android:adjustViewBounds="true"
             android:background="@drawable/button_background"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
             android:src="@drawable/sprint" />
 
     </LinearLayout>
