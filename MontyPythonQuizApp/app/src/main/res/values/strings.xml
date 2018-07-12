@@ -12,6 +12,6 @@
     <string name="question_black_knight">Which limbs did King Arthur cut off the Black Knight in their battle?</string>
     <string name="black_arms">arms</string>
     <string name="black_legs">legs</string>
-    <string name="black_both">both</string>
+    <string name="black_head">head</string>
     <string name="submit_button">Am I worthy to cross the Bridge of Death?</string>
 </resources>

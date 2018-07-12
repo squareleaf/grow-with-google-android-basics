@@ -21,27 +21,33 @@
         android:padding="10dp">
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_margin="10dp"
             android:background="@drawable/button_background"
             android:padding="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
             android:src="@drawable/rewind" />
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_margin="10dp"
             android:background="@drawable/button_background"
             android:padding="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
             android:src="@drawable/play" />
 
         <ImageButton
-            android:layout_width="75dp"
-            android:layout_height="75dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_margin="10dp"
             android:background="@drawable/button_background"
             android:padding="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
             android:src="@drawable/forward" />
 
     </LinearLayout>

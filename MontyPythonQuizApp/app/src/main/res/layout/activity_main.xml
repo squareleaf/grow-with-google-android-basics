@@ -102,30 +102,30 @@
                 android:layout_marginBottom="20dp" >
 
                 <TextView
-                    android:id="@+id/magician"
+                    android:id="@+id/black_knight"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:gravity="center_vertical"
-                    android:text="@string/question_magician" />
+                    android:text="@string/question_black_knight" />
 
                 <CheckBox
-                    android:id="@+id/magician_frank"
+                    android:id="@+id/black_legs"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/question_magician_frank"
-                    android:layout_below="@id/magician" />
+                    android:hint="@string/black_legs"
+                    android:layout_below="@id/black_knight" />
                 <CheckBox
-                    android:id="@+id/magician_tim"
+                    android:id="@+id/black_arms"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/question_magician_tim"
-                    android:layout_below="@id/magician_frank" />
+                    android:hint="@string/black_arms"
+                    android:layout_below="@id/black_legs" />
                 <CheckBox
-                    android:id="@+id/magician_merlin"
+                    android:id="@+id/black_head"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="@string/question_magician_merlin"
-                    android:layout_below="@id/magician_tim" />
+                    android:hint="@string/black_head"
+                    android:layout_below="@id/black_arms" />
             </RelativeLayout>
 
             <RelativeLayout
@@ -135,33 +135,33 @@
                 android:layout_marginBottom="20dp" >
 
                 <TextView
-                    android:id="@+id/black_knight"
+                    android:id="@+id/magician"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:gravity="center_vertical"
-                    android:text="@string/question_black_knight" />
+                    android:text="@string/question_magician" />
 
                 <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
-                    android:id="@+id/black_knight_group"
+                    android:id="@+id/magician_group"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:layout_below="@id/black_knight">
-                    <RadioButton android:id="@+id/black_arms"
+                    android:orientation="vertical"
+                    android:layout_below="@id/magician">
+                    <RadioButton android:id="@+id/magician_frank"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="@string/black_arms"
+                        android:text="@string/question_magician_frank"
+                        android:layout_marginLeft="20dp"/>
+                    <RadioButton android:id="@+id/magician_tim"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
                         android:layout_marginLeft="20dp"
-                        android:layout_marginRight="20dp"/>
-                    <RadioButton android:id="@+id/black_legs"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginRight="20dp"
-                        android:text="@string/black_legs" />
-                    <RadioButton android:id="@+id/black_both"
+                        android:text="@string/question_magician_tim" />
+                    <RadioButton android:id="@+id/magician_merlin"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/black_both" />
+                        android:layout_marginLeft="20dp"
+                        android:text="@string/question_magician_merlin" />
                 </RadioGroup>
             </RelativeLayout>
         </LinearLayout>
