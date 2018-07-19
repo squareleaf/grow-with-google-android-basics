@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Tour of Madison</string>
+    <string name="category_dining">Dining</string>
+    <string name="category_golf">Golf</string>
+    <string name="category_art">Art</string>
+    <string name="category_music">Music</string>
+</resources>

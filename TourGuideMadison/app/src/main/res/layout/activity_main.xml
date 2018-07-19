@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/dining"
+        style="@style/CategoryStyle"
+        android:text="@string/category_dining" />
+
+    <TextView
+        android:id="@+id/golf"
+        style="@style/CategoryStyle"
+        android:text="@string/category_golf" />
+
+    <TextView
+        android:id="@+id/art"
+        style="@style/CategoryStyle"
+        android:text="@string/category_art" />
+
+    <TextView
+        android:id="@+id/music"
+        style="@style/CategoryStyle"
+        android:text="@string/category_music" />
+
+</LinearLayout>
