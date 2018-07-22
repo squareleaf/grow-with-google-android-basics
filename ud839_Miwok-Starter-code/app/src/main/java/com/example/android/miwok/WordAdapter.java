@@ -1,6 +1,7 @@
 package com.example.android.miwok;
 
 import android.app.Activity;
+import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,8 +12,12 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class WordAdapter extends ArrayAdapter<Word> {
-    public WordAdapter(Activity context, ArrayList<Word> wordArrayList) {
+    private int mCategoryColorId;
+
+    public WordAdapter(Activity context, ArrayList<Word> wordArrayList, int categoryColorId) {
         super(context, 0, wordArrayList);
+
+        mCategoryColorId = categoryColorId;
     }
     @Override
 
@@ -30,6 +35,10 @@ public class WordAdapter extends ArrayAdapter<Word> {
 
         TextView defaultTextView = (TextView) listItemView.findViewById(R.id.english_word);
         defaultTextView.setText(currentWord.getDefaultTranslation());
+
+        View wordContainer = listItemView.findViewById(R.id.word_container);
+        int categoryColor = ContextCompat.getColor(getContext(), mCategoryColorId);
+        wordContainer.setBackgroundColor(categoryColor);
 
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.word_image);
         if (currentWord.hasImage()) {
